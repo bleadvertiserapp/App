@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for BLE Advertisement Android App">
-    <title>Privacy Policy - BLE Advertisement</title>
+    <meta name="description" content="Privacy Policy for BLE Advertiser Android App">
+    <title>Privacy Policy — BLE Advertiser</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,12 +14,12 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <span class="logo-icon">📡</span>
-                <span class="logo-text">BLE Advertisement</span>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="BLE Advertiser Logo">
+                <span class="logo-text">BLE Advertiser</span>
+            </a>
             <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link">About</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="privacy-policy.html" class="nav-link active">Privacy Policy</a>
                 <a href="terms-of-use.html" class="nav-link">Terms of Use</a>
@@ -31,30 +32,31 @@
         </div>
     </nav>
 
-    <!-- Privacy Policy Content -->
+    <!-- Privacy Policy Hero -->
     <section class="policy-hero">
         <div class="container">
-            <h1 class="policy-title">Privacy Policy</h1>
-            <p class="policy-date">Last Updated: February 9, 2026</p>
+            <h1 class="policy-title">Privacy <span class="gradient-text">Policy</span></h1>
+            <p class="policy-date">Last Updated: February 14, 2026</p>
         </div>
     </section>
 
+    <!-- Privacy Policy Content -->
     <section class="policy-content">
         <div class="container">
             <div class="policy-body">
 
-                <!-- Introduction -->
+                <!-- 1. Introduction -->
                 <div class="policy-section">
                     <h2>1. Introduction</h2>
-                    <p>Welcome to BLE Advertisement ("we," "our," or "the App"). We are committed to protecting your
+                    <p>Welcome to BLE Advertiser ("we," "our," or "the App"). We are committed to protecting your
                         privacy and ensuring transparency about how we handle your data. This Privacy Policy explains
                         what information we collect, how we use it, and your rights regarding your data when you use the
-                        BLE Advertisement application (com.mjcoding.bleadv).</p>
-                    <p>By using BLE Advertisement, you agree to the collection and use of information in accordance with
+                        BLE Advertiser application (mini.iot.bleadvertiser).</p>
+                    <p>By using BLE Advertiser, you agree to the collection and use of information in accordance with
                         this policy.</p>
                 </div>
 
-                <!-- Information We Collect -->
+                <!-- 2. Information We Collect -->
                 <div class="policy-section">
                     <h2>2. Information We Collect</h2>
 
@@ -85,7 +87,16 @@
                         </ul>
                     </div>
 
-                    <h3>2.2 Automatically Collected Information</h3>
+                    <h3>2.2 Subscription & Billing Data</h3>
+                    <div class="info-card">
+                        <h4>Google Play Billing</h4>
+                        <p>BLE Advertiser uses Google Play Billing for subscription management. We do NOT collect,
+                            store, or have access to your payment details (credit card, billing address, etc.). All
+                            payment processing is handled entirely by Google Play. We only receive a confirmation of
+                            your subscription status (active/inactive) to unlock premium features.</p>
+                    </div>
+
+                    <h3>2.3 Automatically Collected Information</h3>
                     <div class="info-card">
                         <h4>Device Information</h4>
                         <ul>
@@ -98,7 +109,7 @@
                         </ul>
                     </div>
 
-                    <h3>2.3 Information We Do NOT Collect</h3>
+                    <h3>2.4 Information We Do NOT Collect</h3>
                     <div class="highlight-card">
                         <p>We want to be clear about what we do NOT collect:</p>
                         <ul>
@@ -108,53 +119,55 @@
                             <li>❌ Browsing history or activity outside the app</li>
                             <li>❌ Contacts, photos, or other personal files</li>
                             <li>❌ Analytics or tracking data sent to third parties</li>
+                            <li>❌ Payment information or billing details</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- How We Use Information -->
+                <!-- 3. How We Use Information -->
                 <div class="policy-section">
                     <h2>3. How We Use Your Information</h2>
-                    <p>All data collected by BLE Advertisement is stored locally on your device and used solely for app
+                    <p>All data collected by BLE Advertiser is stored locally on your device and used solely for app
                         functionality:</p>
 
                     <div class="use-grid">
                         <div class="use-card">
-                            <div class="use-icon">📡</div>
+                            <span class="use-icon">📡</span>
                             <h4>BLE Advertising</h4>
                             <p>To configure and broadcast Bluetooth Low Energy advertisements based on your profile
                                 settings</p>
                         </div>
                         <div class="use-card">
-                            <div class="use-icon">⚙️</div>
+                            <span class="use-icon">⚙️</span>
                             <h4>Profile Management</h4>
                             <p>To save, retrieve, update, and delete your custom BLE profiles and configurations</p>
                         </div>
                         <div class="use-card">
-                            <div class="use-icon">🤖</div>
+                            <span class="use-icon">🤖</span>
                             <h4>Automation</h4>
                             <p>To execute automated triggers based on time, location, WiFi, battery, or boot events</p>
                         </div>
                         <div class="use-card">
-                            <div class="use-icon">📊</div>
+                            <span class="use-icon">📊</span>
                             <h4>Diagnostics</h4>
                             <p>To generate logs and reports that help you debug and monitor BLE advertising activity</p>
                         </div>
                         <div class="use-card">
-                            <div class="use-icon">🔧</div>
+                            <span class="use-icon">🔧</span>
                             <h4>App Functionality</h4>
                             <p>To provide core features like GATT server simulation, packet validation, and
                                 configuration management</p>
                         </div>
                         <div class="use-card">
-                            <div class="use-icon">💾</div>
-                            <h4>Data Persistence</h4>
-                            <p>To ensure your settings and profiles are preserved between app sessions</p>
+                            <span class="use-icon">💳</span>
+                            <h4>Subscription Validation</h4>
+                            <p>To verify your subscription status via Google Play Billing and unlock premium features
+                                accordingly</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Data Storage -->
+                <!-- 4. Data Storage -->
                 <div class="policy-section">
                     <h2>4. How We Store Your Data</h2>
 
@@ -162,7 +175,7 @@
                         <h3>Local Storage Only</h3>
                         <p>All your data is stored locally on your Android device using:</p>
                         <ul>
-                            <li><strong>ObjectBox Database:</strong> For profiles, services, characteristics, and
+                            <li><strong>Local Database:</strong> For profiles, services, characteristics, and
                                 configuration data</li>
                             <li><strong>Shared Preferences:</strong> For app settings and user preferences</li>
                             <li><strong>Local File System:</strong> For diagnostic logs and temporary data</li>
@@ -181,11 +194,10 @@
                     </ul>
                 </div>
 
-                <!-- Permissions -->
+                <!-- 5. Permissions -->
                 <div class="policy-section">
                     <h2>5. Permissions We Request</h2>
-                    <p>BLE Advertisement requires certain Android permissions to function. Here's why we need each one:
-                    </p>
+                    <p>BLE Advertiser requires certain Android permissions to function. Here's why we need each one:</p>
 
                     <div class="permission-list">
                         <div class="permission-item">
@@ -262,34 +274,35 @@
                     </div>
                 </div>
 
-                <!-- Data Sharing -->
+                <!-- 6. Data Sharing -->
                 <div class="policy-section">
                     <h2>6. Data Sharing and Third Parties</h2>
 
                     <div class="highlight-card success">
                         <h3>✅ We Do NOT Share Your Data</h3>
-                        <p>BLE Advertisement does not share, sell, rent, or transmit your data to any third parties.
+                        <p>BLE Advertiser does not share, sell, rent, or transmit your data to any third parties.
                             Period.</p>
                     </div>
 
                     <p>Specifically:</p>
                     <ul>
-                        <li>❌ No analytics services (Google Analytics, Firebase, etc.)</li>
+                        <li>❌ No analytics services (Google Analytics, Firebase Analytics, etc.)</li>
                         <li>❌ No advertising networks or ad SDKs</li>
                         <li>❌ No third-party data processors</li>
                         <li>❌ No cloud sync or backup services</li>
                         <li>❌ No social media integrations</li>
                     </ul>
 
-                    <p class="note"><strong>Note:</strong> The app may use Android system services (like Google Play
-                        Services for location) but this is handled by the Android OS, not by our app directly
-                        transmitting data.</p>
+                    <p class="note"><strong>Note:</strong> The app uses Google Play Billing for subscription management
+                        and may use Android system services (like Google Play Services for location), but this is
+                        handled by the Android OS and Google Play, not by our app directly transmitting your personal
+                        data.</p>
                 </div>
 
-                <!-- Your Rights -->
+                <!-- 7. Your Rights -->
                 <div class="policy-section">
                     <h2>7. Your Data Rights</h2>
-                    <p>You have complete control over your data in BLE Advertisement:</p>
+                    <p>You have complete control over your data in BLE Advertiser:</p>
 
                     <div class="rights-grid">
                         <div class="right-card">
@@ -319,15 +332,15 @@
                     </div>
                 </div>
 
-                <!-- Children's Privacy -->
+                <!-- 8. Children's Privacy -->
                 <div class="policy-section">
                     <h2>8. Children's Privacy</h2>
-                    <p>BLE Advertisement is a technical tool intended for developers, testers, and IoT professionals. We
-                        do not knowingly collect information from children under 13. If you are a parent or guardian and
+                    <p>BLE Advertiser is a technical tool intended for developers, testers, and IoT professionals. We do
+                        not knowingly collect information from children under 13. If you are a parent or guardian and
                         believe your child has used this app, please uninstall it from their device.</p>
                 </div>
 
-                <!-- Changes to Policy -->
+                <!-- 9. Changes to Policy -->
                 <div class="policy-section">
                     <h2>9. Changes to This Privacy Policy</h2>
                     <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for
@@ -340,26 +353,25 @@
                     <p>We encourage you to review this policy periodically.</p>
                 </div>
 
-                <!-- Contact -->
+                <!-- 10. Contact -->
                 <div class="policy-section">
                     <h2>10. Contact Us</h2>
                     <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please
                         contact us:</p>
 
                     <div class="contact-card">
-                        <p><strong>Email:</strong> support@bleadv.com</p>
-                        <p><strong>App Package:</strong> com.mjcoding.bleadv</p>
-                        <p><strong>Website:</strong> <a href="index.html">BLE Advertisement</a></p>
+                        <p><strong>Email:</strong> bleadvertiser.app@gmail.com</p>
+                        <p><strong>Website:</strong> <a href="index.html">BLE Advertiser</a></p>
                     </div>
 
                     <p class="note">We will respond to all legitimate requests within 30 days.</p>
                 </div>
 
-                <!-- Consent -->
+                <!-- 11. Consent -->
                 <div class="policy-section">
                     <h2>11. Your Consent</h2>
                     <div class="highlight-card">
-                        <p>By using BLE Advertisement, you acknowledge that you have read and understood this Privacy
+                        <p>By using BLE Advertiser, you acknowledge that you have read and understood this Privacy
                             Policy and agree to its terms. If you do not agree, please do not use the app.</p>
                     </div>
                 </div>
@@ -373,24 +385,29 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>BLE Advertisement</h4>
-                    <p>Advanced BLE advertising for Android</p>
+                    <div class="footer-brand">
+                        <img src="logo.png" alt="BLE Advertiser">
+                        <span>BLE Advertiser</span>
+                    </div>
+                    <p>Hardware Free Development. Simulate BLE peripherals, broadcast advertisements, and debug IoT —
+                        all from your Android phone.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <a href="index.html">About</a>
+                    <a href="index.html">Home</a>
                     <a href="faq.html">FAQ</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms-of-use.html">Terms of Use</a>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Support: support@bleadv.com</p>
-                    <p>Package: com.mjcoding.bleadv</p>
+                    <p>Email: bleadvertiser.app@gmail.com</p>
+                    <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser" target="_blank"
+                        rel="noopener">Google Play Store →</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 BLE Advertisement. All rights reserved.</p>
+                <p>&copy; 2026 BLE Advertiser. All rights reserved.</p>
             </div>
         </div>
     </footer>

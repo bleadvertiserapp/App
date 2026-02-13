@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Frequently Asked Questions about BLE Advertisement Android App">
-    <title>FAQ - BLE Advertisement</title>
+    <meta name="description"
+        content="Frequently Asked Questions about BLE Advertiser — Hardware Free BLE Development for Android.">
+    <title>FAQ — BLE Advertiser</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <span class="logo-icon">📡</span>
-                <span class="logo-text">BLE Advertisement</span>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="BLE Advertiser Logo">
+                <span class="logo-text">BLE Advertiser</span>
+            </a>
             <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link">About</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="faq.html" class="nav-link active">FAQ</a>
                 <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
                 <a href="terms-of-use.html" class="nav-link">Terms of Use</a>
@@ -30,28 +33,31 @@
         </div>
     </nav>
 
+    <!-- FAQ Hero -->
     <section class="faq-hero">
         <div class="container">
-            <h1 class="faq-title">Frequently Asked Questions</h1>
-            <p class="faq-subtitle">Find answers to common questions about BLE Advertisement</p>
+            <h1 class="faq-title">Frequently Asked <span class="gradient-text">Questions</span></h1>
+            <p class="faq-subtitle">Find answers about BLE Advertiser, subscriptions, and troubleshooting.</p>
         </div>
     </section>
 
+    <!-- FAQ Content -->
     <section class="faq-content">
         <div class="container">
 
+            <!-- Getting Started -->
             <div class="faq-category">
                 <h2 class="category-title">🚀 Getting Started</h2>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What is BLE Advertisement?</h3>
+                        <h3>What is BLE Advertiser?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>BLE Advertisement is an advanced Android application that allows you to simulate and
-                            broadcast Bluetooth Low Energy (BLE) advertisements. It's designed for developers, testers,
-                            and IoT enthusiasts who need to test BLE scanners or simulate BLE devices.</p>
+                        <p>BLE Advertiser is an advanced Android application that turns your phone into a Bluetooth Low
+                            Energy (BLE) peripheral simulator. You can create custom BLE advertisement profiles,
+                            broadcast them, and test BLE scanners and IoT firmware — all without any extra hardware.</p>
                     </div>
                 </div>
 
@@ -61,8 +67,13 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Requires Android 8.0+, BLE capable device, and location permission (Android requirement for
-                            BLE advertising).</p>
+                        <p>BLE Advertiser requires:</p>
+                        <ul>
+                            <li>Android 8.0 (Oreo) or higher</li>
+                            <li>A device with BLE peripheral support</li>
+                            <li>Bluetooth and Location permissions (required by Android for BLE)</li>
+                        </ul>
+                        <p>For extended advertising (251 bytes), your device must support BLE 5.0.</p>
                     </div>
                 </div>
 
@@ -72,23 +83,53 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Tap "+" → Choose Custom or predefined template → Configure settings → Save → Toggle ON to
-                            advertise.</p>
+                        <p>Tap the "+" button → Choose a predefined template (iBeacon, Eddystone, Heart Rate, etc.) or
+                            create a fully custom profile → Configure your advertisement data, services, and settings →
+                            Save → Toggle the switch to start advertising.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Does BLE Advertiser work on all Android phones?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>BLE Advertiser works on most modern Android devices. However, not all devices support BLE
+                            peripheral mode (advertising). The app will check your device's capabilities at startup and
+                            let you know which features are available. Extended advertising (BLE 5.0) requires newer
+                            hardware.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is an internet connection required?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. BLE Advertiser works completely offline. All your profiles, configurations, and logs are
+                            stored locally on your device. An internet connection is only needed to download the app
+                            from Google Play and validate subscriptions.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Features & Usage -->
             <div class="faq-category">
-                <h2 class="category-title">⚙️ Features</h2>
+                <h2 class="category-title">⚙️ Features & Usage</h2>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What's the difference between Legacy and Extended Advertising?</h3>
+                        <h3>What is the difference between Legacy and Extended Advertising?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p><strong>Legacy:</strong> 31-byte packets, works on all BLE
-                            devices<br><strong>Extended:</strong> Up to 251 bytes, requires BLE 5.0</p>
+                        <p><strong>Legacy Advertising:</strong> Uses 31-byte packets compatible with all BLE devices.
+                            Supported on all Android phones with BLE peripheral mode.</p>
+                        <p><strong>Extended Advertising:</strong> Uses up to 251-byte packets, available only on devices
+                            that support BLE 5.0. Allows you to include more data such as longer service data, multiple
+                            UUIDs, and rich manufacturer data.</p>
                     </div>
                 </div>
 
@@ -98,33 +139,176 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Manual, Duration, Schedule, Location (Geofencing), WiFi, Battery/Charging, Motion, and Boot
-                            triggers.</p>
+                        <p>BLE Advertiser supports 8 automation triggers:</p>
+                        <ul>
+                            <li><strong>Manual:</strong> Toggle advertising on and off manually</li>
+                            <li><strong>Duration:</strong> Advertise for a set time period</li>
+                            <li><strong>Schedule:</strong> Set start/end times with recurring days</li>
+                            <li><strong>Location (Geofence):</strong> Start/stop based on entering or leaving a
+                                geographic area</li>
+                            <li><strong>WiFi:</strong> Trigger based on connected WiFi network</li>
+                            <li><strong>Charging/Battery:</strong> Start when charging or below a battery threshold</li>
+                            <li><strong>Motion:</strong> Start based on device movement detection</li>
+                            <li><strong>Boot:</strong> Auto-start advertising when the phone reboots</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I run multiple profiles at the same time?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can run multiple BLE advertising profiles simultaneously. Each profile can have its
+                            own configuration, advertisement data, GATT services, and triggers. The number of concurrent
+                            advertisements depends on your device's BLE hardware capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What predefined profile templates are available?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>BLE Advertiser includes templates for:</p>
+                        <ul>
+                            <li>iBeacon (Apple's proximity beacon format)</li>
+                            <li>Eddystone (Google's beacon format — UID, URL, TLM)</li>
+                            <li>AltBeacon (open-source beacon standard)</li>
+                            <li>Heart Rate Monitor</li>
+                            <li>Blood Pressure Cuff</li>
+                            <li>Thermometer</li>
+                            <li>Custom Profile (full control over all fields)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
+            <!-- Subscriptions -->
+            <div class="faq-category">
+                <h2 class="category-title">💳 Subscriptions & Billing</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What does the Pro subscription include?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pro unlocks:</p>
+                        <ul>
+                            <li>Unlimited profiles (free is limited to 3)</li>
+                            <li>Extended advertising (251 bytes)</li>
+                            <li>Background advertising</li>
+                            <li>All smart triggers (Geofence, WiFi, Motion, Charging, Schedule)</li>
+                            <li>Ad-free experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I manage or cancel my subscription?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can manage your subscription through the Google Play Store:</p>
+                        <ul>
+                            <li>Open Google Play Store → Tap your profile icon → Payments & subscriptions →
+                                Subscriptions → BLE Advertiser</li>
+                            <li>From there you can cancel, change your plan, or update your payment method</li>
+                        </ul>
+                        <p>Cancellations take effect at the end of your current billing period. You'll continue to have
+                            Pro access until then.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I get a refund?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We don't provide refunds for partial subscription periods. However, Google Play may offer
+                            refunds through their standard refund policy for recent purchases. You can request a refund
+                            directly through Google Play Store.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I restore my subscription on a new device?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your subscription is tied to your Google account. Simply install BLE Advertiser on your new
+                            device, sign in with the same Google account, and your Pro subscription will be
+                            automatically recognized.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troubleshooting -->
             <div class="faq-category">
                 <h2 class="category-title">🔧 Troubleshooting</h2>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Why isn't my advertisement showing up on scanners?</h3>
+                        <h3>Why isn't my advertisement showing up on BLE scanners?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Check: Bluetooth ON, Location permission granted, Location services enabled, Profile toggle
-                            ON, Packet doesn't exceed size limits.</p>
+                        <p>Check the following:</p>
+                        <ul>
+                            <li>Bluetooth is turned ON</li>
+                            <li>Location permission is granted (Android requirement for BLE)</li>
+                            <li>Location services are enabled on your device</li>
+                            <li>The profile toggle is ON</li>
+                            <li>Your advertisement packet doesn't exceed the size limit (31 bytes for legacy)</li>
+                            <li>Your scanner is close enough and scanning for the correct service UUIDs</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Advertising stops when I close the app. How do I keep it running?</h3>
+                        <h3>Advertising stops when I close the app. How do I fix this?</h3>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Disable battery optimization for BLE Advertisement and don't dismiss the notification.</p>
+                        <p>To keep advertising running in the background:</p>
+                        <ul>
+                            <li>Ensure you have Pro subscription (background advertising is a premium feature)</li>
+                            <li>Disable battery optimization for BLE Advertiser in your phone's settings</li>
+                            <li>Don't swipe away the persistent notification</li>
+                            <li>On some manufacturers (Xiaomi, Samsung, Huawei), you may need to allow the app to
+                                "auto-start" in their custom battery settings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>My device doesn't support extended advertising. Why?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Extended advertising requires BLE 5.0 hardware support. While your phone may advertise BLE
+                            5.0, the actual Bluetooth chipset may not support all BLE 5.0 features. This is a hardware
+                            limitation and cannot be resolved via software. You can check your device's BLE capabilities
+                            on the app's Device Info screen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I contact support?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For any issues, feature requests, or questions, email us at
+                            <strong>bleadvertiser.app@gmail.com</strong>. We typically respond within 48 hours.</p>
                     </div>
                 </div>
             </div>
@@ -132,38 +316,45 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
                 <h2>Still Have Questions?</h2>
-                <p>Contact our support team for personalized assistance</p>
-                <a href="mailto:support@bleadv.com" class="btn btn-primary btn-large">Contact Support</a>
+                <p>Reach out to our support team for personalized help.</p>
+                <a href="mailto:bleadvertiser.app@gmail.com" class="btn btn-primary btn-large">Contact Support</a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>BLE Advertisement</h4>
-                    <p>Advanced BLE advertising for Android</p>
+                    <div class="footer-brand">
+                        <img src="logo.png" alt="BLE Advertiser">
+                        <span>BLE Advertiser</span>
+                    </div>
+                    <p>Hardware Free Development. Simulate BLE peripherals, broadcast advertisements, and debug IoT —
+                        all from your Android phone.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <a href="index.html">About</a>
+                    <a href="index.html">Home</a>
                     <a href="faq.html">FAQ</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms-of-use.html">Terms of Use</a>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Support: support@bleadv.com</p>
-                    <p>Package: com.mjcoding.bleadv</p>
+                    <p>Email: bleadvertiser.app@gmail.com</p>
+                    <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser" target="_blank"
+                        rel="noopener">Google Play Store →</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 BLE Advertisement. All rights reserved.</p>
+                <p>&copy; 2026 BLE Advertiser. All rights reserved.</p>
             </div>
         </div>
     </footer>
