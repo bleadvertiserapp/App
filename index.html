@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BLE Advertisement - Advanced Bluetooth Low Energy advertising for Android">
-    <title>BLE Advertisement - About Us</title>
+    <meta name="description"
+        content="BLE Advertiser — Hardware Free Development. Simulate BLE peripherals, broadcast advertisements, and test IoT without extra hardware.">
+    <meta name="keywords"
+        content="BLE, Bluetooth Low Energy, Android, Advertiser, IoT, iBeacon, Eddystone, GATT, BLE 5.0">
+    <title>BLE Advertiser — Hardware Free Development</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,12 +17,12 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <span class="logo-icon">📡</span>
-                <span class="logo-text">BLE Advertisement</span>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="BLE Advertiser Logo">
+                <span class="logo-text">BLE Advertiser</span>
+            </a>
             <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link active">About</a>
+                <a href="index.html" class="nav-link active">Home</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
                 <a href="terms-of-use.html" class="nav-link">Terms of Use</a>
@@ -35,11 +39,36 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Welcome to <span class="gradient-text">BLE Advertisement</span></h1>
-                <p class="hero-subtitle">Advanced Bluetooth Low Energy advertising for Android devices</p>
+                <img src="logo.png" alt="BLE Advertiser" class="hero-logo">
+                <div class="hero-badge">📡 Bluetooth Low Energy Tools for Android</div>
+                <h1 class="hero-title"><span class="gradient-text">BLE Advertiser</span></h1>
+                <p class="hero-tagline">Hardware Free Development</p>
+                <p class="hero-subtitle">Simulate BLE peripherals, broadcast custom advertisements, and debug IoT
+                    workflows — all from your Android phone. No extra hardware required.</p>
                 <div class="hero-buttons">
-                    <a href="#features" class="btn btn-primary">Explore Features</a>
-                    <a href="faq.html" class="btn btn-secondary">Learn More</a>
+                    <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser"
+                        class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                        ▶ Get it on Google Play
+                    </a>
+                    <a href="#features" class="btn btn-secondary btn-large">Explore Features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Smart Triggers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">251</span>
+                        <span class="stat-label">Bytes Extended Data</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">BLE 5.0</span>
+                        <span class="stat-label">Fully Supported</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Offline & Private</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,29 +78,30 @@
     <section class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-subtitle">Empowering developers and IoT enthusiasts</p>
+                <h2 class="section-title">Why <span class="gradient-text">BLE Advertiser</span>?</h2>
+                <p class="section-subtitle">The most powerful BLE advertising toolkit on Android — built for developers,
+                    testers, and IoT enthusiasts.</p>
             </div>
             <div class="about-content">
                 <div class="about-card">
-                    <div class="about-icon">🎯</div>
-                    <h3>Our Mission</h3>
-                    <p>To provide the most comprehensive and user-friendly BLE advertising solution for Android,
-                        enabling developers, testers, and IoT enthusiasts to simulate and test Bluetooth Low Energy
-                        devices with precision and ease.</p>
+                    <span class="about-icon">🎯</span>
+                    <h3>No Hardware Needed</h3>
+                    <p>Turn your Android phone into a fully-featured BLE peripheral simulator. Create profiles, set
+                        service data, and start broadcasting instantly — no dongles, dev kits, or Raspberry Pis
+                        required.</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">💡</div>
-                    <h3>Our Vision</h3>
-                    <p>We envision a world where BLE technology is accessible to everyone. BLE Advertisement bridges the
-                        gap between complex Bluetooth specifications and practical implementation, making advanced BLE
-                        features available at your fingertips.</p>
+                    <span class="about-icon">⚡</span>
+                    <h3>Production-Grade Testing</h3>
+                    <p>Test your scanner apps and IoT firmware against real BLE advertisements. Simulate iBeacons,
+                        Eddystone, Heart Rate monitors, Thermometers, and fully custom GATT services with byte-level
+                        precision.</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">🚀</div>
-                    <h3>Our Innovation</h3>
-                    <p>Built with cutting-edge Android technologies including Jetpack Compose and Clean Architecture, we
-                        deliver a modern, performant app that sets the standard for BLE advertising applications.</p>
+                    <span class="about-icon">🔒</span>
+                    <h3>100% Offline & Private</h3>
+                    <p>All your profiles, configurations, and logs stay on your device. Zero data collection, zero
+                        analytics, zero cloud sync. Your BLE configurations never leave your phone.</p>
                 </div>
             </div>
         </div>
@@ -81,77 +111,155 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">Everything you need for BLE advertising</p>
+                <h2 class="section-title">Powerful <span class="gradient-text">Features</span></h2>
+                <p class="section-subtitle">Everything you need to simulate, broadcast, and debug BLE advertisements.
+                </p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📡</div>
-                    <h3>Dual Mode Support</h3>
-                    <p>Both Legacy (31-byte) and Extended (251-byte) BLE 5.0 advertising with full PHY configuration</p>
+                    <span class="feature-icon">📡</span>
+                    <h3>Dual-Mode Advertising</h3>
+                    <p>Legacy (31-byte) and Extended (251-byte) BLE 5.0 advertising with full PHY configuration — 1M,
+                        2M, and Coded PHY.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
-                    <h3>Profile Management</h3>
-                    <p>Create custom profiles or use predefined templates for iBeacon, Eddystone, Heart Rate, and more
-                    </p>
+                    <span class="feature-icon">⚙️</span>
+                    <h3>Profile Templates</h3>
+                    <p>Start fast with predefined templates for iBeacon, Eddystone, Heart Rate, Blood Pressure,
+                        Thermometer, and more — or create fully custom profiles.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>GATT Services</h3>
-                    <p>Full GATT server simulation with custom services and characteristics configuration</p>
+                    <span class="feature-icon">🔧</span>
+                    <h3>GATT Server Simulation</h3>
+                    <p>Build complete GATT service hierarchies with custom services, characteristics, and descriptors.
+                        Full read/write/notify support.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🤖</div>
+                    <span class="feature-icon">🤖</span>
                     <h3>Smart Automation</h3>
-                    <p>Time-based, geofencing, WiFi, battery, and boot triggers for automated advertising</p>
+                    <p>Schedule, geofence, WiFi, battery, motion, and boot triggers. Automate your BLE advertising
+                        without touching the app.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
+                    <span class="feature-icon">📊</span>
                     <h3>Live Diagnostics</h3>
-                    <p>Real-time logging and monitoring with categorized, persistent logs for debugging</p>
+                    <p>Real-time logging with categorized, searchable, and exportable logs. Monitor every advertisement
+                        start, stop, and error.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Modern UI</h3>
-                    <p>Beautiful Material 3 design with Jetpack Compose for a seamless user experience</p>
+                    <span class="feature-icon">🔄</span>
+                    <h3>Background Advertising</h3>
+                    <p>Keep your BLE advertisements running even when the app is minimized. Persistent foreground
+                        service with full control.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📦</span>
+                    <h3>Byte-Level Control</h3>
+                    <p>Set manufacturer data, service UUIDs, service data, TX power, device name, and raw advertisement
+                        bytes with full hex editor support.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎨</span>
+                    <h3>Modern Material UI</h3>
+                    <p>Beautiful Material 3 interface built entirely with Jetpack Compose. Dark mode, adaptive layouts,
+                        and smooth animations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack Section -->
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Started in <span class="gradient-text">4 Steps</span></h2>
+                <p class="section-subtitle">From install to broadcasting in under a minute.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Install</h3>
+                    <p>Download BLE Advertiser from the Google Play Store. It's free to get started.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Create a Profile</h3>
+                    <p>Choose a predefined template or create a fully custom BLE advertising profile.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Configure</h3>
+                    <p>Set your advertisement data, GATT services, triggers, and scheduling options.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Start Advertising</h3>
+                    <p>Toggle on and your phone becomes a BLE peripheral. Verify with any BLE scanner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple <span class="gradient-text">Pricing</span></h2>
+                <p class="section-subtitle">Get started for free. Upgrade when you need more power.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">$0 <span>/ forever</span></div>
+                    <ul>
+                        <li>Up to 3 profiles</li>
+                        <li>Legacy advertising (31 bytes)</li>
+                        <li>Manual control</li>
+                        <li>Basic GATT services</li>
+                        <li>Live logs</li>
+                        <li class="disabled">Background advertising</li>
+                        <li class="disabled">Extended advertising (251 bytes)</li>
+                        <li class="disabled">Smart triggers</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser"
+                        class="btn btn-secondary" target="_blank" rel="noopener">Download Free</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <div class="price">$2.99 <span>/ month</span></div>
+                    <ul>
+                        <li>Unlimited profiles</li>
+                        <li>Extended advertising (251 bytes)</li>
+                        <li>Background advertising</li>
+                        <li>Advanced GATT services</li>
+                        <li>All smart triggers</li>
+                        <li>Geofence & WiFi triggers</li>
+                        <li>Motion & charging triggers</li>
+                        <li>Ad-free experience</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser"
+                        class="btn btn-primary" target="_blank" rel="noopener">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
     <section class="tech-stack">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Built with Modern Technology</h2>
-                <p class="section-subtitle">Leveraging the best of Android development</p>
+                <h2 class="section-title">Built with <span class="gradient-text">Modern Tech</span></h2>
+                <p class="section-subtitle">Engineered using the latest Android development stack.</p>
             </div>
             <div class="tech-grid">
-                <div class="tech-item">
-                    <div class="tech-badge">Kotlin</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">Jetpack Compose</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">Material 3</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">Hilt DI</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">Coroutines</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">ObjectBox</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">Clean Architecture</div>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-badge">BLE 5.0</div>
-                </div>
+                <div class="tech-badge">Kotlin</div>
+                <div class="tech-badge">Jetpack Compose</div>
+                <div class="tech-badge">Material 3</div>
+                <div class="tech-badge">Hilt DI</div>
+                <div class="tech-badge">Coroutines</div>
+                <div class="tech-badge">Clean Architecture</div>
+                <div class="tech-badge">BLE 5.0</div>
+                <div class="tech-badge">Foreground Services</div>
             </div>
         </div>
     </section>
@@ -160,9 +268,12 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Get Started?</h2>
-                <p>Download BLE Advertisement and start exploring the world of Bluetooth Low Energy</p>
-                <a href="#download" class="btn btn-primary btn-large">Download Now</a>
+                <h2>Ready to Simulate BLE?</h2>
+                <p>Download BLE Advertiser and turn your phone into a BLE peripheral in seconds.</p>
+                <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser"
+                    class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    ▶ Get it on Google Play
+                </a>
             </div>
         </div>
     </section>
@@ -172,24 +283,29 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>BLE Advertisement</h4>
-                    <p>Advanced BLE advertising for Android</p>
+                    <div class="footer-brand">
+                        <img src="logo.png" alt="BLE Advertiser">
+                        <span>BLE Advertiser</span>
+                    </div>
+                    <p>Hardware Free Development. Simulate BLE peripherals, broadcast advertisements, and debug IoT —
+                        all from your Android phone.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <a href="index.html">About</a>
+                    <a href="index.html">Home</a>
                     <a href="faq.html">FAQ</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms-of-use.html">Terms of Use</a>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Support: support@bleadv.com</p>
-                    <p>Package: com.mjcoding.bleadv</p>
+                    <p>Email: bleadvertiser.app@gmail.com</p>
+                    <a href="https://play.google.com/store/apps/details?id=mini.iot.bleadvertiser" target="_blank"
+                        rel="noopener">Google Play Store →</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 BLE Advertisement. All rights reserved.</p>
+                <p>&copy; 2026 BLE Advertiser. All rights reserved.</p>
             </div>
         </div>
     </footer>
