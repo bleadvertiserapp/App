@@ -18,7 +18,7 @@
     --text-secondary: #A5A3B8;
     --text-muted: #6B6980;
     --gradient-hero: linear-gradient(135deg, #7C3AED 0%, #A78BFA 50%, #818CF8 100%);
-    --gradient-card: linear-gradient(145deg, rgba(124,58,237,0.12) 0%, rgba(129,140,248,0.06) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(124, 58, 237, 0.12) 0%, rgba(129, 140, 248, 0.06) 100%);
     --gradient-cta: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
     --shadow-sm: 0 2px 8px rgba(124, 58, 237, 0.08);
     --shadow-md: 0 8px 30px rgba(124, 58, 237, 0.12);
@@ -33,7 +33,9 @@
 }
 
 /* ==================== GLOBAL ==================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,9 +47,18 @@ html {
     scrollbar-color: var(--primary) var(--surface);
 }
 
-html::-webkit-scrollbar { width: 6px; }
-html::-webkit-scrollbar-track { background: var(--surface); }
-html::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 3px;
+}
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -64,8 +75,21 @@ body {
     padding: 0 24px;
 }
 
-a { color: var(--primary-light); text-decoration: none; transition: var(--transition-fast); }
-a:hover { color: var(--primary-lighter); }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--primary-light);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-lighter);
+}
 
 ::selection {
     background: var(--primary);
@@ -101,7 +125,10 @@ a:hover { color: var(--primary-lighter); }
 .logo img {
     width: 38px;
     height: 38px;
+    min-width: 38px;
     border-radius: 10px;
+    object-fit: contain;
+    display: inline-block;
 }
 
 .logo-text {
@@ -127,7 +154,8 @@ a:hover { color: var(--primary-lighter); }
     padding: 4px 0;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--primary-light);
 }
 
@@ -171,7 +199,7 @@ a:hover { color: var(--primary-lighter); }
     position: absolute;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.12) 0%, transparent 70%);
     top: -300px;
     right: -200px;
     animation: float 8s ease-in-out infinite;
@@ -183,7 +211,7 @@ a:hover { color: var(--primary-lighter); }
     position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(129,140,248,0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(129, 140, 248, 0.08) 0%, transparent 70%);
     bottom: -200px;
     left: -200px;
     animation: float 10s ease-in-out infinite reverse;
@@ -191,8 +219,15 @@ a:hover { color: var(--primary-lighter); }
 }
 
 @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(-30px, 25px) scale(1.05); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-30px, 25px) scale(1.05);
+    }
 }
 
 .hero-content {
@@ -204,15 +239,24 @@ a:hover { color: var(--primary-lighter); }
 .hero-logo {
     width: 100px;
     height: 100px;
+    min-width: 100px;
     border-radius: 26px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     box-shadow: var(--shadow-glow);
     animation: pulse-glow 3s ease-in-out infinite;
+    object-fit: contain;
 }
 
 @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 30px rgba(124,58,237,0.25); }
-    50% { box-shadow: 0 0 50px rgba(124,58,237,0.4); }
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgba(124, 58, 237, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 50px rgba(124, 58, 237, 0.4);
+    }
 }
 
 .hero-badge {
@@ -534,8 +578,12 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+.pricing-grid.three-col {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .pricing-card {
@@ -560,6 +608,25 @@ section {
     left: 50%;
     transform: translateX(-50%);
     background: var(--gradient-cta);
+    color: white;
+    padding: 4px 20px;
+    border-radius: var(--radius-full);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.pricing-card.best-value {
+    border-color: #22C55E;
+}
+
+.pricing-card.best-value::before {
+    content: 'BEST VALUE';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #22C55E, #16A34A);
     color: white;
     padding: 4px 20px;
     border-radius: var(--radius-full);
@@ -619,6 +686,76 @@ section {
     color: var(--text-muted);
 }
 
+/* ==================== COMPARISON TABLE ==================== */
+.comparison-section {
+    margin-top: 4rem;
+}
+
+.comparison-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.comparison-table thead {
+    background: var(--gradient-cta);
+}
+
+.comparison-table th {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-weight: 700;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.comparison-table td {
+    padding: 0.85rem 1.2rem;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+}
+
+.comparison-table tbody tr {
+    background: var(--surface-card);
+    transition: var(--transition-fast);
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background: var(--glass);
+}
+
+.comparison-table tbody tr:hover {
+    background: var(--glass-hover);
+}
+
+.comparison-table td:first-child {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.comparison-table .pro-col {
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+.comparison-table th.pro-col {
+    color: white;
+}
+
 /* ==================== TECH STACK ==================== */
 .tech-grid {
     display: flex;
@@ -661,7 +798,7 @@ section {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
     animation: float 12s ease-in-out infinite;
     pointer-events: none;
 }
@@ -682,7 +819,7 @@ section {
     font-size: 1.15rem;
     margin-bottom: 2rem;
     opacity: 0.9;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .cta .btn-primary {
@@ -692,42 +829,47 @@ section {
 
 .cta .btn-primary:hover {
     background: var(--text-primary);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     color: var(--primary-dark);
 }
 
 /* ==================== FAQ ==================== */
-.faq-hero, .policy-hero {
+.faq-hero,
+.policy-hero {
     padding: 80px 0 40px;
     text-align: center;
     background: var(--surface);
     position: relative;
 }
 
-.faq-hero::before, .policy-hero::before {
+.faq-hero::before,
+.policy-hero::before {
     content: '';
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
     top: -300px;
     right: -200px;
     pointer-events: none;
 }
 
-.faq-title, .policy-title {
+.faq-title,
+.policy-title {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 0.8rem;
     letter-spacing: -0.02em;
 }
 
-.faq-subtitle, .policy-date {
+.faq-subtitle,
+.policy-date {
     font-size: 1.1rem;
     color: var(--text-secondary);
 }
 
-.faq-content, .policy-content {
+.faq-content,
+.policy-content {
     padding: 60px 0 90px;
 }
 
@@ -791,7 +933,8 @@ section {
     max-height: 1000px;
 }
 
-.faq-answer p, .faq-answer ul {
+.faq-answer p,
+.faq-answer ul {
     padding: 0 1.5rem 1.3rem;
     color: var(--text-secondary);
     font-size: 0.95rem;
@@ -852,7 +995,10 @@ section {
     line-height: 1.6;
 }
 
-.info-card, .storage-card, .contact-card, .highlight-card {
+.info-card,
+.storage-card,
+.contact-card,
+.highlight-card {
     background: var(--gradient-card);
     padding: 1.5rem;
     border-radius: var(--radius-md);
@@ -870,14 +1016,16 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.use-grid, .rights-grid {
+.use-grid,
+.rights-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.2rem;
     margin: 1.5rem 0;
 }
 
-.use-card, .right-card {
+.use-card,
+.right-card {
     background: var(--gradient-card);
     padding: 1.5rem;
     border-radius: var(--radius-md);
@@ -885,7 +1033,8 @@ section {
     transition: var(--transition);
 }
 
-.use-card:hover, .right-card:hover {
+.use-card:hover,
+.right-card:hover {
     border-color: var(--primary);
     transform: translateY(-3px);
 }
@@ -919,7 +1068,8 @@ section {
     font-size: 1.3rem;
 }
 
-.note, .highlight {
+.note,
+.highlight {
     padding: 1rem 1.2rem;
     background: var(--glass);
     border-radius: var(--radius-sm);
@@ -951,7 +1101,10 @@ section {
 .footer-brand img {
     width: 32px;
     height: 32px;
+    min-width: 32px;
     border-radius: 8px;
+    object-fit: contain;
+    display: inline-block;
 }
 
 .footer-brand span {
@@ -968,7 +1121,8 @@ section {
     letter-spacing: 0.02em;
 }
 
-.footer-section p, .footer-section a {
+.footer-section p,
+.footer-section a {
     color: var(--text-secondary);
     text-decoration: none;
     display: block;
@@ -1066,7 +1220,9 @@ section {
         align-items: center;
     }
 
-    .about-content, .features-grid, .steps-grid {
+    .about-content,
+    .features-grid,
+    .steps-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1075,7 +1231,8 @@ section {
         gap: 2rem;
     }
 
-    .pricing-grid {
+    .pricing-grid,
+    .pricing-grid.three-col {
         grid-template-columns: 1fr;
     }
 
@@ -1094,7 +1251,8 @@ section {
         height: 80px;
     }
 
-    .faq-title, .policy-title {
+    .faq-title,
+    .policy-title {
         font-size: 2rem;
     }
 
