@@ -39,7 +39,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <img src="logo.png" alt="BLE Advertiser" class="hero-logo">
+                <div class="hero-logo-wrapper">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <img src="main_app_logo.png" alt="BLE Advertiser" class="hero-logo">
+                </div>
                 <div class="hero-badge">📡 Bluetooth Low Energy Tools for Android</div>
                 <h1 class="hero-title"><span class="gradient-text">BLE Advertiser</span></h1>
                 <p class="hero-tagline">Hardware Free Development</p>
@@ -107,64 +112,118 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Powerful <span class="gradient-text">Features</span></h2>
-                <p class="section-subtitle">Everything you need to simulate, broadcast, and debug BLE advertisements.
-                </p>
+                <p class="section-subtitle">The complete toolkit for BLE development, simulation, and debugging.</p>
             </div>
+
+            <!-- Core Features -->
+            <h3 class="subsection-title">Core Capabilities</h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">📡</span>
-                    <h3>Dual-Mode Advertising</h3>
-                    <p>Legacy (31-byte) and Extended (251-byte) BLE 5.0 advertising with full PHY configuration — 1M,
-                        2M, and Coded PHY.</p>
+                    <h3>Multi-Standard Support</h3>
+                    <p>Full support for iBeacon, Eddystone (UID, URL, EID), and AltBeacon formats.</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">⚙️</span>
-                    <h3>Profile Templates</h3>
-                    <p>Start fast with predefined templates for iBeacon, Eddystone, Heart Rate, Blood Pressure,
-                        Thermometer, and more — or create fully custom profiles.</p>
+                    <span class="feature-icon">📋</span>
+                    <h3>21+ Predefined Profiles</h3>
+                    <p>One-tap setup for Heart Rate, Smart Home, Sensors, and Wearables profiles.</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🔧</span>
-                    <h3>GATT Server Simulation</h3>
-                    <p>Build complete GATT service hierarchies with custom services, characteristics, and descriptors.
-                        Full read/write/notify support.</p>
+                    <span class="feature-icon">🛠️</span>
+                    <h3>Custom BLE Profiles</h3>
+                    <p>Full control over Service UUIDs, Manufacturer Data, and Service Data.</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🤖</span>
-                    <h3>Smart Automation</h3>
-                    <p>Schedule, geofence, WiFi, battery, motion, and boot triggers. Automate your BLE advertising
-                        without touching the app.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">📊</span>
-                    <h3>Live Diagnostics</h3>
-                    <p>Real-time logging with categorized, searchable, and exportable logs. Monitor every advertisement
-                        start, stop, and error.</p>
+                    <span class="feature-icon">🚀</span>
+                    <h3>Extended Advertising</h3>
+                    <p>BLE 5.0+ support for larger payloads (255 bytes) and improved efficiency.</p>
                 </div>
                 <div class="feature-card">
                     <span class="feature-icon">🔄</span>
-                    <h3>Background Advertising</h3>
-                    <p>Keep your BLE advertisements running even when the app is minimized. Persistent foreground
-                        service with full control.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">📦</span>
-                    <h3>Byte-Level Control</h3>
-                    <p>Set manufacturer data, service UUIDs, service data, TX power, device name, and raw advertisement
-                        bytes with full hex editor support.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🎨</span>
-                    <h3>Modern Material UI</h3>
-                    <p>Beautiful Material 3 interface built entirely with Jetpack Compose. Dark mode, adaptive layouts,
-                        and smooth animations.</p>
+                    <h3>Legacy Support</h3>
+                    <p>Maintain compatibility with older devices using standard legacy advertising modes.</p>
                 </div>
             </div>
+
+            <!-- Smart Automation -->
+            <h3 class="subsection-title">Smart Automation</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📍</span>
+                    <h3>Geofence Triggers</h3>
+                    <p>Automatically start/stop advertising when entering specific geographic locations.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📶</span>
+                    <h3>WiFi Automation</h3>
+                    <p>Trigger advertisements based on connection to specific WiFi networks.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📅</span>
+                    <h3>Smart Scheduling</h3>
+                    <p>Set time windows, recurring intervals, and "Quiet Hours" for automated operation.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🏃</span>
+                    <h3>Motion Detection</h3>
+                    <p>Utilize accelerometer to advertise only when the device is in motion.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔋</span>
+                    <h3>Power Management</h3>
+                    <p>Triggers for charging state and low battery thresholds to save power.</p>
+                </div>
+            </div>
+
+            <!-- Developer Tools -->
+            <h3 class="subsection-title">Developer Tools</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">💻</span>
+                    <h3>GATT Server Sim</h3>
+                    <p>Configure custom Services & Characteristics with Read, Write, Notify, and Indicate.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>Live Logging</h3>
+                    <p>Real-time console for debugging transmission status, errors, and trigger events.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚙️</span>
+                    <h3>Precision Config</h3>
+                    <p>Adjust Tx Power, Advertising Intervals, and Connectable/Scannable modes.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📤</span>
+                    <h3>Export & Share</h3>
+                    <p>Easily export logs and profile configurations for analysis and sharing.</p>
+                </div>
+            </div>
+
+            <!-- UX Highlights -->
+            <h3 class="subsection-title">User Experience</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🌗</span>
+                    <h3>Dark Mode</h3>
+                    <p>Fully themed UI that respects system preferences for comfortable usage.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">✨</span>
+                    <h3>Material Design 3</h3>
+                    <p>Modern, clean, and intuitive interface following the latest Android guidelines.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎓</span>
+                    <h3>Interactive Tutorials</h3>
+                    <p>Built-in guides for BLE basics, profile creation, and automation setup.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -196,6 +255,79 @@
                     <h3>Start Advertising</h3>
                     <p>Toggle on and your phone becomes a BLE peripheral. Verify with any BLE scanner.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose BLE Advertiser -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="gradient-text">BLE Advertiser</span>?</h2>
+                <p class="section-subtitle">See how we go beyond what typical BLE tools offer.</p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table why-choose-table">
+                    <thead>
+                        <tr>
+                            <th>Capability</th>
+                            <th>Other BLE Tools</th>
+                            <th class="pro-col">BLE Advertiser</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Predefined Device Profiles</td>
+                            <td>❌ Manual setup required</td>
+                            <td class="pro-col">✅ 21+ one-tap profiles (Health, Smart Home, Sensors, Wearables)</td>
+                        </tr>
+                        <tr>
+                            <td>Location-Based Automation</td>
+                            <td>❌ Not available</td>
+                            <td class="pro-col">✅ Geofence triggers — auto start/stop by GPS location</td>
+                        </tr>
+                        <tr>
+                            <td>WiFi-Based Triggers</td>
+                            <td>❌ Not available</td>
+                            <td class="pro-col">✅ Auto-advertise when connected to specific WiFi networks</td>
+                        </tr>
+                        <tr>
+                            <td>Smart Scheduling</td>
+                            <td>❌ Not available</td>
+                            <td class="pro-col">✅ Time windows, recurring cycles, and quiet hours</td>
+                        </tr>
+                        <tr>
+                            <td>Motion Detection Trigger</td>
+                            <td>❌ Not available</td>
+                            <td class="pro-col">✅ Advertise only when device is in motion</td>
+                        </tr>
+                        <tr>
+                            <td>Power Management</td>
+                            <td>❌ No battery awareness</td>
+                            <td class="pro-col">✅ Low battery threshold & charge-only mode</td>
+                        </tr>
+                        <tr>
+                            <td>Background Persistence</td>
+                            <td>⚠️ Stops when app is closed</td>
+                            <td class="pro-col">✅ Survives app kill, boot persistence, foreground service</td>
+                        </tr>
+                        <tr>
+                            <td>Extended Advertising</td>
+                            <td>⚠️ Limited or unsupported</td>
+                            <td class="pro-col">✅ Full BLE 5.0 — up to 255 bytes payload</td>
+                        </tr>
+                        <tr>
+                            <td>Interactive Tutorials</td>
+                            <td>❌ No guided onboarding</td>
+                            <td class="pro-col">✅ Built-in step-by-step guides for every feature</td>
+                        </tr>
+                        <tr>
+                            <td>Manufacturer Data</td>
+                            <td>❌ Not supported</td>
+                            <td class="pro-col">✅ Full manufacturer data with custom Company ID & payload</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -378,25 +510,6 @@
         </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section class="tech-stack">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Built with <span class="gradient-text">Modern Tech</span></h2>
-                <p class="section-subtitle">Engineered using the latest Android development stack.</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-badge">Kotlin</div>
-                <div class="tech-badge">Jetpack Compose</div>
-                <div class="tech-badge">Material 3</div>
-                <div class="tech-badge">Hilt DI</div>
-                <div class="tech-badge">Coroutines</div>
-                <div class="tech-badge">Clean Architecture</div>
-                <div class="tech-badge">BLE 5.0</div>
-                <div class="tech-badge">Foreground Services</div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta">
